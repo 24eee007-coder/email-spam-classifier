@@ -2,8 +2,8 @@ import joblib
 import re
 import pandas as pd
 
-model = joblib.load("model/model.pkl")
-columns = joblib.load("model/columns.pkl")
+model = joblib.load("model.pkl")
+columns = joblib.load("columns.pkl")
 
 def predict(text):
     words = re.findall(r"[a-z]+", text.lower())
